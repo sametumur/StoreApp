@@ -1,0 +1,168 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-grid.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-grid.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-grid.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-grid.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-grid.rtl.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-grid.rtl.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-grid.rtl.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-grid.rtl.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-reboot.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-reboot.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-reboot.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-reboot.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-reboot.rtl.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-reboot.rtl.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-reboot.rtl.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-utilities.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-utilities.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-utilities.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-utilities.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-utilities.rtl.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-utilities.rtl.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-utilities.rtl.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap.rtl.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap.rtl.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap.rtl.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\css\bootstrap.rtl.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\js\bootstrap.bundle.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\js\bootstrap.bundle.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\js\bootstrap.bundle.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\js\bootstrap.bundle.min.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\js\bootstrap.esm.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\js\bootstrap.esm.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\js\bootstrap.esm.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\js\bootstrap.esm.min.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\js\bootstrap.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\js\bootstrap.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\js\bootstrap.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\js\bootstrap.min.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\bootstrap-grid.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\bootstrap-reboot.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\bootstrap-utilities.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\bootstrap.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\forms\_floating-labels.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\forms\_form-check.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\forms\_form-control.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\forms\_form-range.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\forms\_form-select.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\forms\_form-text.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\forms\_input-group.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\forms\_labels.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\forms\_validation.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\helpers\_clearfix.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\helpers\_color-bg.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\helpers\_colored-links.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\helpers\_focus-ring.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\helpers\_icon-link.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\helpers\_position.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\helpers\_ratio.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\helpers\_stacks.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\helpers\_stretched-link.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\helpers\_text-truncation.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\helpers\_visually-hidden.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\helpers\_vr.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_alert.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_backdrop.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_banner.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_border-radius.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_box-shadow.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_breakpoints.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_buttons.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_caret.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_clearfix.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_color-mode.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_color-scheme.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_container.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_deprecate.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_forms.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_gradients.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_grid.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_image.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_list-group.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_lists.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_pagination.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_reset-text.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_resize.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_table-variants.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_text-truncate.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_transition.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_utilities.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\mixins\_visually-hidden.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\utilities\_api.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\vendor\_rfs.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_accordion.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_alert.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_badge.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_breadcrumb.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_button-group.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_buttons.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_card.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_carousel.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_close.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_containers.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_dropdown.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_forms.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_functions.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_grid.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_helpers.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_images.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_list-group.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_maps.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_mixins.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_modal.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_nav.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_navbar.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_offcanvas.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_pagination.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_placeholders.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_popover.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_progress.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_reboot.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_root.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_spinners.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_tables.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_toasts.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_tooltip.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_transitions.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_type.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_utilities.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_variables-dark.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\lib\bootsrap\scss\_variables.scss" />
+    <_ContentIncludedByDefault Remove="Views\Category\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Repositories\Repositories.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
+    <ProjectReference Include="..\Presentation\Presentation.csproj" />
+  </ItemGroup>
+
+</Project>

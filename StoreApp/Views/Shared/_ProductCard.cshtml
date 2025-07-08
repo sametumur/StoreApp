@@ -1,0 +1,28 @@
+@model Product
+<div class="col-sm-12 col-md-4 my-3">
+    <div class="card h-100">
+        <div class="card-header">
+            @Model?.Name
+        </div>
+        <img src="@Model?.ImageUrl" class="card-img-top" style="height: 200px; object-fit: cover;" alt="@Model?.Name">
+        <div class="card-body">
+            <h5 class="card-title">@Model?.Description</h5>
+            <p class="card-text">@Model?.Price.ToString("C")</p>
+            <div class="d-flex flex-row gap-2">
+                <a asp-action="Get" asp-controller="Product" asp-route-id="@Model?.Id"
+                   class="btn btn-outline-primary w-50">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    Detail
+                </a>
+                <form id="@Model.Id" asp-page="/cart" method="post" class="w-50">
+                    <input type="hidden" name="productId" value="@Model?.Id"/>
+                    <input type="hidden" name="quantity" value=1/>
+                    <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.GetBaseUrl()"/>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

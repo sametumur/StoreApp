@@ -1,0 +1,41 @@
+@model UserDtoForUpdate
+
+<div class="text-center">
+    <div class="display-6">Update</div>
+</div>
+
+<form method="post" asp-action="Update">
+    <div class="text-danger" asp-validation-summary="All"></div>
+    <div class="form-group my-3">
+        <label asp-for="UserName">User Name</label>
+        <input asp-for="UserName" class="form-control" placeholder="User Name"/>
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="Email">E-mail</label>
+        <input asp-for="Email" class="form-control" placeholder="E-mail"/>
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="PhoneNumber">Phone Number</label>
+        <input asp-for="PhoneNumber" class="form-control" placeholder="Phone Number"/>
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="Roles">Roles</label>
+        @foreach (var role in Model.AllRoles)
+        {
+            <div class="form-check my-2">
+                <input type="checkbox" name="Roles" value="@role" checked="@(Model.UserRoles.Contains(@role))" class="form-check-input"/>
+                <label class="form-check-label">@role</label>       
+            </div>
+        }
+    </div>
+    <div class="form-group my-3">
+        <div class="btn-group">
+            <button type="submit" class="btn btn-primary">
+                <i class="fa fa-save"></i> Update
+            </button>
+            <a asp-action="Index" class="btn btn-outline-primary">
+                <i class="fa fa-list"></i> User List
+            </a>
+        </div>
+    </div>
+</form>

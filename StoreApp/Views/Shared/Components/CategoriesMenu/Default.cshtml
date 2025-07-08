@@ -1,0 +1,18 @@
+@model IEnumerable<Category>
+
+<article class="card-group-item">
+    <header class="card-header">
+        <h6 class="title">
+            <i class="fa-solid fa-layer-group"></i> Categories
+        </h6>
+    </header>
+    <ul class="list-group">
+        @foreach (Category category in Model)
+        {
+            <li href="#" class="list-group-item list-group-item-action ">
+                <a asp-area="@ViewBag.TargetArea"
+                   asp-action="Index" class="link-secondary" asp-route-categoryId="@category.Id">@category.Name</a>
+            </li>
+        }
+    </ul>
+</article>

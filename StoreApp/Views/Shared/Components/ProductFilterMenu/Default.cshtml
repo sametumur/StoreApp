@@ -1,0 +1,32 @@
+<article class="card-group-item">
+    <header class="card-header">
+        <h6 class="title">
+            <i class="fa-solid fa-filter"></i> Filters
+        </h6>
+    </header>
+    <div class="filter-content">
+        <div class="card-body">
+            <div class="form-row">
+                <form method="get" asp-area="@ViewBag.TargetArea" asp-action="Index">
+                    <div class="form-group text-right">
+                        <label>Search</label>
+                        <input type="text" class="form-control" name="SearchTerm" placeholder="Product Search">
+                    </div>
+                    
+                    <div class="form-group ">
+                        <label>Min</label>
+                        <input type="number" class="form-control" name="MinPrice"  placeholder="Min Price">
+                    </div>
+                    <div class="form-group  text-right">
+                        <label>Max</label>
+                        <input type="number" class="form-control" name="MaxPrice" placeholder="Max Price">
+                    </div>
+                    
+                    <div class="form-group my-3 text-right">
+                        <button type="submit" class="btn btn-primary">Apply</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</article>
