@@ -120,7 +120,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## GitHub Repository
 
-This project is hosted on GitHub at https://github.com/samet-umur-crea/StoreApp.git
+This project is hosted on GitHub at https://github.com/sametumur/StoreApp.git
 
 ## Contact
 
